@@ -11,14 +11,6 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-define( 'WCCE_PATH', plugin_dir_path( __FILE__ ) );
-define( 'WCCE_URL',  plugin_dir_url( __FILE__ ) );
-
-add_action( 'wp_enqueue_scripts', 'wcce_enqueue_styles' );
-function wcce_enqueue_styles() {
-    wp_enqueue_style( 'wcce-style', WCCE_URL . 'assets/style.css', array(), '1.3.0' );
-}
-
 /* ============================================================
  * 一、折價券後台「指定免運」Tab
  * ============================================================ */
